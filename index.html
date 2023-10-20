@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/pokebola.png" type="image/png">
+    <title>POKEDEX</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <img src="images/descarga.png" alt="Logo_Pokedex">
+            <ul class="nav-list">
+                <li class="nav-item"><button class="btn btn-header" id="ver-todos" style="padding: 0.5em;">Todos</button></li>
+                <li class="nav-item"><button class="btn btn-header normal" id="normal" title="normal"><img src="images/normal.png" alt="normal"></button></li>
+                <li class="nav-item"><button class="btn btn-header fire" id="fire" title="fire"><img src="images/fire.png" alt="fire"></button></li>
+                <li class="nav-item"><button class="btn btn-header water" id="water" title="water"><img src="images/water.png" alt="water"></button></li>
+                <li class="nav-item"><button class="btn btn-header grass" id="grass" title="grass"><img src="images/grass.png"  alt="grass"></button></li>
+                <li class="nav-item"><button class="btn btn-header electric" id="electric" title="electric"><img src="images/electric.png"  alt="electric"></button></li>
+                <li class="nav-item"><button class="btn btn-header ice" id="ice" title="ice"><img src="images/ice.png"  alt="ice"></button></li>
+                <li class="nav-item"><button class="btn btn-header fighting" id="fighting" title="fighting"><img src="images/fighting.png"  alt="fighting"></button></li>
+                <li class="nav-item"><button class="btn btn-header poison" id="poison" title="poison"><img src="images/poison.png"  alt="poison"></button></li>
+                <li class="nav-item"><button class="btn btn-header ground" id="ground" title="ground"><img src="images/ground.png"  alt="ground"></button></li>
+                <li class="nav-item"><button class="btn btn-header flying" id="flying" title="flying"><img src="images/flying.png"  alt="flying"></button></li>
+                <li class="nav-item"><button class="btn btn-header psychic" id="psychic" title="psychic"><img src="images/psychic.png"  alt="psychic"></button></li>
+                <li class="nav-item"><button class="btn btn-header bug" id="bug" title="bug"><img src="images/bug.png"  alt="bug"></button></li>
+                <li class="nav-item"><button class="btn btn-header rock" id="rock" title="rock"><img src="images/rock.png"  alt="rock"></button></li>
+                <li class="nav-item"><button class="btn btn-header ghost" id="ghost" title="ghost"><img src="images/ghost.png"  alt="ghost"></button></li>
+                <li class="nav-item"><button class="btn btn-header dark" id="dark" title="dark"><img src="images/dark.png"  alt="dark"></button></li>
+                <li class="nav-item"><button class="btn btn-header dragon" id="dragon" title="dragon"><img src="images/dragon.png"  alt="dragon"></button></li>
+                <li class="nav-item"><button class="btn btn-header steel" id="steel" title="steel"><img src="images/steel.png"  alt="steel"></button></li>
+                <li class="nav-item"><button class="btn btn-header fairy" id="fairy" title="fairy"><img src="images/fairy.png"  alt="fairy"></button></li>
+            </ul>
+        </nav>
+        <div class="generation">
+            <select title="gen" name="gen" id="gen">
+                <option value="GEN" disabled selected>GEN</option>
+                <option value="primera" id="primera">Primera GEN</option>
+                <option value="segunda" id="segunda">Segunda GEN</option>
+                <option value="tercera" id="tercera">Tercera GEN</option>
+                <option value="cuarta" id="cuarta">Cuarta GEN</option>
+                <option value="quinta" id="quinta">Quinta GEN</option>
+                <option value="sexta" id="sexta">Sexta GEN</option>
+                <option value="septima" id="septima">Septima GEN</option>
+                <option value="octava" id="octava">Octava GEN</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <div id="todos">
+            <div class="pokemon-todos" id="listaPokemon"></div>
+        </div>
+        <div id="data">
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer1">creado por - SoloDeveloperAlpha</div>
+        <p class="footer2">&copy; Copyright <span id="year"></span> </p>
+    </footer>
+    <script type="module" src="js/generation.js"></script>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
