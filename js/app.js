@@ -190,7 +190,7 @@ botonesHeader.forEach(boton => boton.addEventListener("click", (e) => {
                     mostrarPokemon(dataJSON);
                 } else {
                     let fondo=`fondo${botonId}.png`;
-                    cmain.style.backgroundImage = `url(../assets/images/${fondo})`;
+                    cmain.style.backgroundImage = `url(./assets/images/${fondo})`;
                     const tipos = dataJSON.types.map(type => type.type.name);
                     if (tipos.some(tipo => tipo.includes(botonId))) {
                         mostrarPokemon(dataJSON);
