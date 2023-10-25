@@ -98,7 +98,7 @@ function mostrarPokemon(data) {
               dexterData.innerHTML = `
                             <div class="dexter-poke-name">
                               <div id="poke-name1">
-                              <img src="/assets/images/pokebola.png" alt="" srcset="">${pokeId} ${nom_poke.textContent}</div>
+                              <img src="../assets/images/pokebola.png" alt="" srcset="">${pokeId} ${nom_poke.textContent}</div>
                               <div id="poke-name2">${es_p.valor1}</div>
                             </div>
                             <div class="dexter-poke-types">
@@ -189,7 +189,7 @@ botonesHeader.forEach(boton => boton.addEventListener("click", (e) => {
                     cmain.style.backgroundImage="none";
                     mostrarPokemon(dataJSON);
                 } else {
-                    cmain.style.backgroundImage = `url("../assets/images/fondo${botonId}.png")`;
+                    cmain.style.backgroundImage = `url(../assets/images/fondo${botonId}.png)`;
                     const tipos = dataJSON.types.map(type => type.type.name);
                     if (tipos.some(tipo => tipo.includes(botonId))) {
                         mostrarPokemon(dataJSON);
