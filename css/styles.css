@@ -46,7 +46,7 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image:url(/assets/images/pokefondo.png);
+    background-image:url(../assets/images/pokefondo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment:fixed;
