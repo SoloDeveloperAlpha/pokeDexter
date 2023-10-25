@@ -46,7 +46,9 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: url(/assets/images/body.png) no-repeat center center/cover;
+    background-image: url(/assets/images/body.png);
+    background-repeat: no-repeat;
+    background-position: center;
     background-attachment:fixed;
     background-size: 25%;
 }
@@ -94,6 +96,7 @@ header{
 .nav img{
     width: 100%;
     max-width: 8rem;
+
 }
 .nav-list{
     display: flex;
