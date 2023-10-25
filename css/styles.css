@@ -108,7 +108,7 @@ header{
 .btn-header{
     display: grid;
     place-items: center ;
-    background-color: var(--clr-gray);
+    background-color:rgba(212,204,163,1) ;
     border-radius: 100vmax;
     cursor: pointer;
     text-transform: uppercase;
@@ -288,10 +288,13 @@ main{
 
 .pokemon{
     position: relative;
-    border-radius: 1rem;
-    background-color: var(--clr-white);
     box-shadow: .5rem .5rem .8rem rgba(0, 0, 0, .15);
-    padding-block: 1rem;
+    background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 20px) calc(100% - 20px) no-repeat,
+    linear-gradient(90deg, rgba(212,204,163,1) 0%, #d3baba 58%, #645932 100%);
+    border-radius: 8px;
+    padding: 14px;
+    box-sizing: border-box;
+
     text-transform: uppercase;
     cursor: pointer;
     isolation: isolate;
@@ -299,7 +302,7 @@ main{
     transition: .3s ease;
 }
 .pokemon:hover{
-    box-shadow: .5rem .5rem .8rem rgba(0, 0, 0, 0.25);
+    box-shadow: .5rem .5rem .8rem rgb(110, 94, 1);
 }
 .pokemon-id-back{
     position: absolute;
@@ -313,7 +316,7 @@ main{
     transition: .3s;
 }
 .pokemon:hover .pokemon-id-back{
-    color: #dadada;
+    color: rgb(219, 208, 136);
 }
 .pokemon-id-dexter{
     font-size: 2rem;
@@ -324,6 +327,7 @@ main{
     padding-inline: 1rem;
     display: flex;
     justify-content: center;
+    
 }
 
 .pokemon-imagen img{
