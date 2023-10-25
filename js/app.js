@@ -98,7 +98,7 @@ function mostrarPokemon(data) {
               dexterData.innerHTML = `
                             <div class="dexter-poke-name">
                               <div id="poke-name1">
-                              <img src="../assets/images/pokebola.png" alt="" srcset="">${pokeId} ${nom_poke.textContent}</div>
+                              <img src="/assets/images/pokebola.png" alt="" srcset="">${pokeId} ${nom_poke.textContent}</div>
                               <div id="poke-name2">${es_p.valor1}</div>
                             </div>
                             <div class="dexter-poke-types">
