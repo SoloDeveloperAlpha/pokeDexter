@@ -5,7 +5,11 @@
     --clr-black:#1c1c1c;
     --clr-gray:#ececec;
     --clr-white:#f7f7f7;
-
+    --dex-col1:#dd1035;
+    --dex-col2:#171717;
+    --dex-col3:#444444;
+    --dex-col4:#EDEDED;
+    --dex-col5:#0082d8;
     --type-normal: #A8A77A;
     --type-fire: #EE8130;
     --type-water: #6390F0;
@@ -60,18 +64,20 @@ header{
     flex-direction: row;
     align-items: center;
     padding-block: 1rem;
-    background-color: var(--clr-white);
+    background-color: var(--dex-col1);
     box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, .5);
     .generation{
         display: grid;
         place-items: center;
         width: auto;
-        
         background-color: #1c1c1cee;
-        border-radius: 100vmax ;
+        border-radius: 0px 10px 10px 0px;
         margin-right: 2em;
         #gen{
-            border: none;
+            border-top: 0;
+            border-right: 0;
+            border-bottom:0;
+            border-left: 5px solid #0082d8;
             background: transparent;
             color: white;
             padding: .5em;
@@ -122,16 +128,19 @@ header{
 
 .btn-header:hover{
     transform: scale(1.1);
-    box-shadow: 0 0 1rem rgba(0, 0, 0, .25);
+    box-shadow: 0 0 .6rem rgba(0, 0, 0, 0.748);
 }
 
 main{
     flex: 1;
+    display: grid;
+    place-content: center;
+    padding: 2rem;
     width: 100%;
-    padding: 2rem 6rem;
     margin: 0 auto;
     background-size: cover;
     background-attachment:fixed;
+    overflow: hidden;
 }
 
 @keyframes pokebolaAnimada {
@@ -278,6 +287,7 @@ main{
     }
     
 }
+
 .pokemon-todos{
     height: 100%;
     padding: auto 0;
@@ -289,12 +299,11 @@ main{
 .pokemon{
     position: relative;
     box-shadow: .5rem .5rem .8rem rgba(0, 0, 0, .15);
-    background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 20px) calc(100% - 20px) no-repeat,
-    linear-gradient(90deg, rgba(212,204,163,1) 0%, #d3baba 58%, #645932 100%);
-    border-radius: 8px;
+    background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 12px) calc(100% - 12px) no-repeat,
+    linear-gradient(90deg, var(--dex-col5) 0%, var(--dex-col4) 58%, #645932 100%);
+    border-radius: 5px;
     padding: 14px;
     box-sizing: border-box;
-
     text-transform: uppercase;
     cursor: pointer;
     isolation: isolate;
@@ -309,7 +318,7 @@ main{
     top: 1rem;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 800;
     color: var(--clr-gray);
     z-index: -1;
